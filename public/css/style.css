@@ -92,18 +92,7 @@
     height: auto;
   }
   
-  .car {
-    width: 50%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-  }
   
-  .car-details {
-    text-align: center;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
   
   /* CARDS */
   .card {
@@ -116,6 +105,19 @@
   }
   
   .login-card {
+    margin: auto;
+    flex: 0 1 300px;
+    max-width: 100%;
+    padding: 5px;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+    border-style: double;
+    border-width: thick;
+    background-color: #577a7c;
+    color: var(--light);
+  }
+
+  .signup-form {
     margin: auto;
     flex: 0 1 300px;
     max-width: 100%;
