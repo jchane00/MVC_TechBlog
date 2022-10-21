@@ -1,0 +1,38 @@
+<article>
+  <a href="/dashboard">Dashboard</a>
+  <h2>
+    Edit Post
+  </h2>
+  <form>
+    <div>
+      <input name="post-title" type="text" value="{{post.title}}" />
+    </div>
+    <div>
+      <textarea name="post-text">{{post.post_text}}</textarea>
+    </div>
+    <div>
+      Posted on  {{ post.created_at}}
+    
+      <a href="/post/{{post.id}}">{{post.comments.length}} {{commentLabel}}</a>
+    </div>
+    <button type="submit">Save</button>
+    <button type="button">Delete</button>
+  </form>
+</article>
+
+<form>
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">Add Comment</button>
+  </div>
+</form>
+
+{{> comments post.comments}}
+
+
+<script src="/javascript/edit-post.js"></script>
+<script src="/javascript/delete-post.js"></script>
+<script src="/javascript/comment.js"></script>

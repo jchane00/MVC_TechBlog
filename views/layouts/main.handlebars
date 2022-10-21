@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog</title>
+    <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+  <div>
+  <header>
+    </h1><a href="/">Tech Blog</a></h1>
+  </header>
+  <nav>
+    
+    <!-- If the user is logged in, show a logout button -->
+    {{#if loggedIn}}
+    <button href="/api/users/logout" id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <!-- Otherwise, show a link to login -->
+    <a href="/login">Login</a>
+    {{/if}}
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+  </nav>
+  <main>
+    
+      {{{body}}}
+    
+  </main>
+  </div>
+</body>
+
+</html>

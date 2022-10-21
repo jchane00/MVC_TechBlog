@@ -1,0 +1,33 @@
+<section>
+  <a href="/dashboard"> Dashboard</a>
+  <h2>
+    Update Profile
+  </h2>
+  <form>
+    <div>
+      <label for="user-name">Username</label>
+      <input name="user-name" type="text" value="{{user.username}}" />
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input name="email" value="{{user.email}}" />
+    </div>
+     <div>
+      <label for="password">Password</label>         
+      <input type="password" name="password" />
+    </div>
+    <div>
+      <input type="hidden" id="user-id" name="user-id" value={{user.id}} />
+    </div>   
+    <button type="submit">Save Progress</button>
+  </form>
+</section>
+
+
+<script src="/javascript/edit-user.js"></script>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
